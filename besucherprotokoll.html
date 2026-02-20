@@ -471,11 +471,11 @@
       Firma: document.getElementById('inp_firma').value.trim(),
       Besuchsgrund: document.getElementById('inp_grund').value.trim(),
       Ansprechpartner: document.getElementById('inp_ap').value.trim(),
-      KFZ_Kennzeichen: document.getElementById('inp_kfz').value.trim().toUpperCase(),
-      Besucherausweis_Nr: document.getElementById('inp_ausweis').value.trim(),
-      Unterweisung_bestaetigt: true,
-      Unterschrift: hasSig ? '✓ Unterschrift geleistet' : '',
-      Eincheckzeit: now.toISOString()
+      'KFZ-Kennzeichen': document.getElementById('inp_kfz').value.trim().toUpperCase(),
+      'Besucherausweis Nr.': document.getElementById('inp_ausweis').value.trim(),
+      'Unterweisung bestätigt': true,
+      'Unterschrift': hasSig ? '✓ Unterschrift geleistet' : '',
+      'Datum und Uhrzeit': now.toISOString()
     };
     document.getElementById('loadingOverlay').classList.add('show');
     try {
