@@ -474,7 +474,7 @@
       KFZ_Kennzeichen: document.getElementById('inp_kfz').value.trim().toUpperCase(),
       Besucherausweis_Nr: document.getElementById('inp_ausweis').value.trim(),
       Unterweisung_bestaetigt: true,
-      Unterschrift: sigCanvas.toDataURL('image/png'),
+      Unterschrift: hasSig ? '✓ Unterschrift geleistet' : '',
       Eincheckzeit: now.toISOString()
     };
     document.getElementById('loadingOverlay').classList.add('show');
